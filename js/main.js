@@ -14,20 +14,67 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro (
 */
 
 
-let contenitoreCelle = document.getElementById("container-celle");
+let contenitoreCelle = document.getElementById("container-griglia");
 
 let sceltaDifficoltà = prompt("scegli la difficoltà del gioco tra 1, 2, 3");
 
+function creareCelle ( elementoGenerato , classeInserita ){
+    let cella = document.createElement (elementoGenerato);
+    cella.classList.add (classeInserita);
+    return cella
+}
+
 for ( let i = 1; i < 100; i++) {
 
-    let nuoveCelle = creareCelle ("div", "cella-facile");
+    let nuoveCelle = creareCelle("div", "cella-facile");
     contenitoreCelle.append(nuoveCelle);
     console.log(nuoveCelle);
 
+        nuoveCelle.addEventListener("click",
+            function(){
+                nuoveCelle.classList.add("cliccata");
+            }
+        );
 }
 
-function creareCelle ( elementoGenerato , classeInserita ){
-    let cella = document.createElement (elementoGenerato);
-    cella.classlist.add (classeInserita);
-    return cella
+for ( let i = 1; i < 100; i++) {
+
+    let nuoveCelle = creareCelle("div", "cella-facile");
+    contenitoreCelle.append(nuoveCelle);
+    console.log(nuoveCelle);
+
+        nuoveCelle.addEventListener("click",
+            function(){
+                nuoveCelle.classList.add("cliccata");
+            }
+        );
 }
+
+for ( let i = 1; i < 81; i++) {
+
+    let nuoveCelle = creareCelle("div", "cella-facile");
+    contenitoreCelle.append(nuoveCelle);
+    console.log(nuoveCelle);
+
+        nuoveCelle.addEventListener("click",
+            function(){
+                nuoveCelle.classList.add("cliccata");
+            }
+        );
+}
+
+for ( let i = 1; i < 49; i++) {
+
+    let nuoveCelle = creareCelle("div", "cella-facile");
+    contenitoreCelle.append(nuoveCelle);
+    console.log(nuoveCelle);
+
+        nuoveCelle.addEventListener("click",
+            function(){
+                nuoveCelle.classList.add("cliccata");
+            }
+        );
+}
+
+
+

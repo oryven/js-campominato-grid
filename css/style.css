@@ -14,7 +14,6 @@ body {
     margin: 50px auto 0;
     border: 1px solid white;
     display: flex;
-    display: wrap;
 }
 
 .cella-facile {
@@ -36,5 +35,10 @@ body {
     height: calc(100% / 7);
     border: solid white 1px;
     cursor: pointer;
+}
+
+.cliccata {
+    background-color: white;
+    color: black;
 }
 
