@@ -7,8 +7,8 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro (
 */
 
 /* 
-1. chiedere all'utente il livello di difficoltà del gioco tra: facile (1), medio(2), diffile(3). 
-2. crerae in base alla scelta della difficoltà una griglia con 100, 81 o 49 celle
+1. chiedere all'utente il livello di difficoltà del gioco tra: facile (1), medio(2), diffile(3). => promnt
+2. crerae in base alla scelta della difficoltà una griglia con 100, 81 o 49 celle => ciclo for con if
 3. inserire all'interno di ogni singola cella il numero relativo
-4. ogni qualvolta l'utente clicca su di una cella questa si colora mostrando il numero
+4. ogni qualvolta l'utente clicca su di una cella questa si colora mostrando il numero => clik
 */
