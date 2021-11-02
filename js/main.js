@@ -16,7 +16,16 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro (
 
 let contenitoreCelle = document.getElementById("container-griglia");
 
-let sceltaDifficoltà = prompt("scegli la difficoltà del gioco tra 1, 2, 3");
+let difficoltà = prompt("scegli la difficoltà del gioco tra 1, 2, 3");
+
+let livello;
+if (difficoltà == 1){
+    livello = 100;
+} else if (difficoltà == 2){
+    livello = 81;
+} else if (difficoltà == 3){
+    livello = 49;
+}
 
 function creareCelle ( elementoGenerato , classeInserita ){
     let cella = document.createElement (elementoGenerato);
@@ -24,7 +33,7 @@ function creareCelle ( elementoGenerato , classeInserita ){
     return cella
 }
 
-for ( let i = 1; i < 100; i++) {
+for ( let i = 1; i < livello; i++) {
 
     let nuoveCelle = creareCelle("div", "cella-facile");
     contenitoreCelle.append(nuoveCelle);
@@ -37,7 +46,7 @@ for ( let i = 1; i < 100; i++) {
         );
 }
 
-for ( let i = 1; i < 100; i++) {
+for ( let i = 1; i < livello; i++) {
 
     let nuoveCelle = creareCelle("div", "cella-facile");
     contenitoreCelle.append(nuoveCelle);
@@ -50,20 +59,7 @@ for ( let i = 1; i < 100; i++) {
         );
 }
 
-for ( let i = 1; i < 81; i++) {
-
-    let nuoveCelle = creareCelle("div", "cella-facile");
-    contenitoreCelle.append(nuoveCelle);
-    console.log(nuoveCelle);
-
-        nuoveCelle.addEventListener("click",
-            function(){
-                nuoveCelle.classList.add("cliccata");
-            }
-        );
-}
-
-for ( let i = 1; i < 49; i++) {
+for ( let i = 1; i < livello; i++) {
 
     let nuoveCelle = creareCelle("div", "cella-facile");
     contenitoreCelle.append(nuoveCelle);
