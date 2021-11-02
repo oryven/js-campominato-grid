@@ -12,3 +12,22 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro (
 3. inserire all'interno di ogni singola cella il numero relativo
 4. ogni qualvolta l'utente clicca su di una cella questa si colora mostrando il numero => clik
 */
+
+
+let contenitoreCelle = document.getElementById("container-celle");
+
+let sceltaDifficoltà = prompt("scegli la difficoltà del gioco tra 1, 2, 3");
+
+for ( let i = 1; i < 100; i++) {
+
+    let nuoveCelle = creareCelle ("div", "cella-facile");
+    contenitoreCelle.append(nuoveCelle);
+    console.log(nuoveCelle);
+
+}
+
+function creareCelle ( elementoGenerato , classeInserita ){
+    let cella = document.createElement (elementoGenerato);
+    cella.classlist.add (classeInserita);
+    return cella
+}
